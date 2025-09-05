@@ -1,0 +1,10 @@
+const accountId=144
+let accountemail="ram@gmail.com"
+var accountPassword="12345"
+accountcity="jaipur"
+let accountState
+// comment 
+//accountId=2 //can't be done
+/*console.log(accountId)
+console.table([accountId,accountPassword,accountemail,accountcity,accountState])
+console.log(accountState)*/
