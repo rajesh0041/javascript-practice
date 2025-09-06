@@ -1,0 +1,11 @@
+// comparison
+console.log(2==1) //false
+console.log(2!=1) // true
+console.log("2">1) // true -> data type converted into number then checked 
+console.log("02">1) //true
+console.log(null>1) //false   -> not recommended 
+console.log(null==0) //false
+console.log(null>=0) //true
+console.log(undefined==0) //false 
+console.log(undefined>=0) //false
+console.log("2"===2) // false -> strict check -> checks data type and value both 
