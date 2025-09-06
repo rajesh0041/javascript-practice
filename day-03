@@ -1,0 +1,27 @@
+// let score='33'
+// console.log(typeof score)
+// let value=Number(score) // converting string to Number
+// console.log(typeof value)
+
+
+// let sc="45ram"
+// console.log(typeof sc)
+// let va=Number(sc)
+// console.log(typeof va) //number
+// console.log(va) // nan( not a number)
+// let v=Number(null)
+// console.log(v)
+
+
+// let b=1
+// let c=Boolean(b) // true if 1 false if 0
+// let d=Boolean('') // false
+// let e=Boolean('a') //true
+// let f=Boolean(34) //true
+// console.log(f)
+
+
+let a=78
+let s=String(a)
+console.log(s)
+console.log(typeof s)
