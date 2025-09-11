@@ -1,0 +1,18 @@
+// stack memory and heap memory
+// stack memory ----> premitive type k datatypes
+//heap memory ---> non-premitive type k datatypes
+
+let a="ram";
+let b=a;
+b='shyam';
+console.log(a)    // ram
+console.log(b)   //shyam
+
+
+let user1={
+    name:"ram"
+}
+user2=user1
+user2.name='shyam'
+console.log(user1.name) //shyam
+console.log(user2.name) //shyam
