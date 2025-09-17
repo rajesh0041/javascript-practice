@@ -1,0 +1,49 @@
+/*const score=100
+console.log(score)
+const balance =new Number(899)
+console.log(balance) //[Number:899]
+
+console.log(balance.toString().length); //3  
+//toString()-> converts no into strings
+
+console.log(balance.toFixed(3));//899.000
+const n=new Number(655.39 )
+console.log(n.toFixed(1)) //655.4
+
+
+console.log(n.toPrecision(4)) //655.4
+console.log(n.toPrecision(2)) //6.6e+2 
+// toPrecision() return ans in string
+// if parameter value is less than no of digits in front of decimal than return in exponential form 
+console.log(n.toPrecision(3)) //655
+
+
+const n1=new Number(100000000);
+console.log(n1.toLocaleString()); // 100,000,000   -> by deefault in US no system
+console.log(n1.toLocaleString('en-IN')); //10,00,00,000 -> indian number sysytem
+*/
+/*
+max_int -> max value 
+min_int -> min value 
+max_safe_integer  -> max integer which is safe to use
+min_safe_integer -> min value which is safe to use  
+*/
+
+
+//+++++++++++++++++++++ maths +++++++++++++
+
+console.log(Math) // object[math]{}
+
+console.log(Math.abs(-5)) //5
+console.log(Math.round(5.9))//6
+console.log(Math.ceil(5.4))//6
+console.log(Math.floor(5.8))//5
+//pow() ,sqrt(),
+console.log(Math.min(2,3,4,1,6))//1
+console.log(Math.max(3,4,2,1,3,5))//5
+
+console.log(Math.random()) // random no bw 0 and 1
+console.log(Math.random()*10+1)//1 to 10 k bich 
+const min=10
+const max=20
+console.log(Math.floor(Math.random()*(max-min+1))+min); // random no bw min and max 
