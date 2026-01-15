@@ -1,0 +1,38 @@
+const tindereUser=new Object() // singelton object 
+
+const tinderuser={} //non singleton object
+tinderuser.id="123"
+tinderuser.name="ramu"
+console.log(tinderuser)
+
+fullname={
+    Userfullname:{
+        firstname:"rajesh",
+        lastname:"godara"
+    }
+}
+console.log(fullname.Userfullname.firstname)//rajesh
+
+const obj1={1:"a",2:"b",}
+const obj2={3:"c",4:"d",}
+
+const obj3={obj1,obj2};
+console.log(obj3) //{ obj1: { '1': 'a', '2': 'b' }, obj2: { '3': 'c', '4': 'd' } }
+
+const obj4=Object.assign(obj1,obj2)
+console.log(obj4) //{ '1': 'a', '2': 'b', '3': 'c', '4': 'd' }
+// isme sari values obj1 k andr gayi h obj1 as a source 
+
+const obj5=Object.assign({},obj1,obj2)
+console.log(obj5)//{ '1': 'a', '2': 'b', '3': 'c', '4': 'd' }
+//{}-> isko as a source liya gaya h 
+
+const obj6={...obj1,...obj2} //most used method "..."-> mtlb spread karna
+console.log(obj6) //{ '1': 'a', '2': 'b', '3': 'c', '4': 'd' }
+const data=[{email:"ajbdau@gmail.com"},{},{}]
+data[1].email;//-> use kiya jayega jab object kisi data base me se aya ho (data base se jab koi object aata h to vo aise format me aata h object h use andr bhot sare objects h data=[{email:"ajbdau@gmail.com"},{},{}] aise to first data base ko access krne k liye apn y vala syntax use krenge
+
+console.log(Object.keys(obj1))// keys ka ek array bana k dega object -> obj1 ka
+Object.values(obj1);//similiarly values ka array dega 
+console.log(Object.entries(obj1)) // [ [ '1', 'a' ], [ '2', 'b' ], [ '3', 'c' ], [ '4', 'd' ] ]   -> gives array of arrays 
+console.log(tindereUser.hasOwnProperty("isloggedin")) //false -> gives in bool
