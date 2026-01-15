@@ -1,0 +1,26 @@
+function say(){
+    //syntax 
+    console.log("anfialw")
+}
+say // reference h y 
+say()//execution
+
+function add(num1,num2){
+    console.log(num1+num2)
+}
+
+add(3,4)//7
+add(3,"4")//34
+add(3,'a') //3a
+// parameters -> function head me 
+// arguments -> function call me 
+function add1(num1,num2){
+    return num1+num2
+}
+const s=add1(7,8);
+console.log(s);//->15
+
+//agr func call me argument nhi de to vo undefined ho jata h 
+//undefined -> false
+//"" -> false 
+// default parameter -> func header me kuch vakue de do 
