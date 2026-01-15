@@ -1,0 +1,19 @@
+const course={
+    course:"js",
+    price:"8393",
+    teacher:"bablu"
+}
+ // object destructure
+const {teacher}=course // extract kr rhe h agli bar jab bhi teacher likhenge teacher ki value aayegi 
+console.log(teacher)//bablu
+const{course:c}=course //-> name ko bhi change kar skte h 
+console.log(c) //js
+
+
+// {
+//     "name":"rajesh",
+//     "cs":"js",
+//     "price":"free"
+// }
+// json format h jo upr h vo 
+// api's call aisa object dete  h issw apnee ko use karna hota h kabhi kabhi apis array me return krte h 
