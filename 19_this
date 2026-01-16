@@ -1,0 +1,72 @@
+const user={
+    username:"rajesh",
+    p:"599",
+
+    welcomemessage:function(){
+        console.log(`${this.username} , welcome to web`)
+
+        console.log(this)
+    }
+    // this keyword current context ko refer karta h 
+}
+user.welcomemessage() //rajesh , welcome to web
+
+//{
+//   username: 'rajesh',
+//   p: '599',
+//   welcomemessage: [Function: welcomemessage]
+// }
+
+user.username="ram"
+user.welcomemessage() //ram , welcome to web
+// ram , welcome to web
+// {
+//   username: 'ram',
+//   p: '599',
+//   welcomemessage: [Function: welcomemessage]
+// }
+console.log(this) //{}
+
+
+// when we do this in browser than we get window output but here we get only {} because in browser sabse jyada global object h vo window object h but here kuch nhi h 
+
+
+// console.log(this)
+// VM128:1 Window {0: Window, window: Window, self: Window, document: document, name: '', location: Location, …}
+
+
+function chai(){
+    console.log(this)
+}
+chai()// --> bohat bada sa print kara deta h function ka duration nodestart vgera vgera 
+
+function chai1(){
+    let username="rajesh"
+    console.log(this.username) //undefined object k andr hi kam krta h function k andr nhi 
+}
+chai1()
+
+
+const cahipee=()=>{
+    let username="rajesh"
+    console.log(this.username);//undefined
+}
+cahipee()
+
+const cahipee1=()=>{
+    let username="rajesh"
+    console.log(this);//undefined
+}
+cahipee()
+//arrow function me this nhi hota 
+
+//syntax
+
+const add=(num1)=>{
+    return num1+num1
+}
+
+const add=(num1)=> num1+num1 // implicit return 
+const add=(num1)=>( num1+num1 ) // curly braces me return use karna hi padega parenthesis me nhi 
+const add=(num1)=> {username :"rajesh"} // undefined is tarah object return nhi kar skte 
+const add=(num1)=> ({username:"rajesh"})//object return karne k liye parenthesis lagana hi padega 
