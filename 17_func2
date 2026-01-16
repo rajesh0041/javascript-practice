@@ -1,0 +1,28 @@
+
+
+function calculateCartPrice(...num1){ // for variable no of parameters we use ... rest operator -> this gives values in array 
+    return num1;
+}
+console.log(calculateCartPrice(100,200,300,400)) //[ 100, 200, 300, 400 ]
+
+function calculateCartPrice2(num,num0,...num1){ 
+    return num1;
+}
+console.log(calculateCartPrice2(100,200,300,400))// [ 300, 400 ] because num=100,num0=200 and baki ka array me num1 me 
+
+const user={
+    username:"rajesh",
+    p:"599"
+}
+function handleObject(anyobject){
+    console.log(`username is ${user.username} and price is ${user.p}`)
+}
+handleObject(user) //username is rajesh and price is 599
+handleObject({username:"rajesh",
+    p:"599"})//username is rajesh and price is 599 
+
+const arr=[100,200,300,600];
+function ret(getArray){
+    return getArray[1]
+}
+console.log(ret(arr)); //200
