@@ -1,0 +1,49 @@
+let a =10
+const b=20
+var c =30
+
+console.log(a)//10
+console.log(b)//20
+console.log(c)//30
+
+if(true){
+    let a =50
+    const b=50
+    var c =50
+}
+console.log(a)//10
+console.log(b)//20
+console.log(c)//50
+//{}//->scope
+
+//global scope -> sab jagah accessable
+//local scope -> only locally availabe 
+
+function one(){
+    const username="rajesh"
+
+    function two(){
+        const web="youtube"
+        console.log(username)
+    }
+    //  console.log(web) -> not defined 
+    two()
+}
+
+if(true){
+    const username="rajesh"
+    if(username==="rajesh"){
+        const web="youtube"
+        console.log(username + web) // rajeshyoutube
+    }
+    //console.log(web) //-> not defined 
+}
+one()
+addone(6) // possible nothing wrong 
+function addone(num){
+    return num+1
+}
+// addtwo(7) //-> gives an error
+const addtwo=function(num){
+    return num+2
+}// this is also a way to make function 
