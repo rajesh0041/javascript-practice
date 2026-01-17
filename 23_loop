@@ -1,0 +1,32 @@
+// for 
+
+for(let i=0;i<10;i++){
+    console.log(i)
+}
+
+for (let index = 0; index < 2; index++) {
+    console.log(`outer loop  ${index}`)
+    for(let j=0;j<3;j++){
+        console.log(`inner loop ${j}`)
+    }   
+}
+// outer loop  0
+// inner loop 0
+// inner loop 1
+// inner loop 2
+// outer loop  1
+// inner loop 0
+// inner loop 1
+// inner loop 2
+
+//break and continue 
+
+for(let i=0;i<20;i++){
+    if(i==5){
+        console.log(`reached ${i}`)
+        break
+    }
+}
+//break-> loop ko break krk loop k agle statement par phonch jata h 
+
+//continue -> reached continue to vo usse niche loop me nhi chlega next iteration per shift  
