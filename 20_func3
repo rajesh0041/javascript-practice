@@ -1,0 +1,18 @@
+// immediately invoked function expresions(IIFE)
+
+(function chai(){
+    //named IIFEE
+    console.log(`db connected`)
+})();
+// this is IIFE -> used for removing pollution of global scope  
+( ()=>{
+    console.log(`pretty`)
+})();
+
+//error dega reason ; nhi h first function me  need of ; -> iifee function start to ho gaya par use pata nhi h ki stop khan hona h to usk liye semicolon necessary h 
+//db connected
+//pretty
+
+((name)=>{
+    console.log(`${name}'s db connected`)
+})("rajesh");//rajesh's db connected
