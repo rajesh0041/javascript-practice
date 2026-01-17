@@ -1,0 +1,24 @@
+//java script execution context 
+//sabse phle global ec banta h and this keyword isko allocate  ho jata h 
+
+//java script -> single threaded 
+
+//-> global execution context
+//-> function execution context
+// -> eval execution context
+
+
+// memory creation phasse 
+// -> memory create hoti h 
+//sare variables ka nam aata h and normal varialble ko undefined allocate hota h 
+//->function name ko func definition part  allocate ho jata h  h
+//execution phase 
+// variables ko unki value allocate ho jati h 
+
+// jese hi function call pe phonchte h 
+//to uska ek alg  execution context banata h 
+// fir us ec me new variable env banta h and new execution thread banta h 
+
+// ab naya execution context ban gaya h to usme fir se 2 phase me kam hoga memory creation and execution 
+
+// fir jab function ka part execute ho jata h vo return karta h uske parent execution context me then andr vala execution context delete ho jata h 
