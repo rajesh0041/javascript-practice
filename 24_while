@@ -1,0 +1,13 @@
+let i=0
+while (i<2){
+    console.log("ram")
+    i++;
+}
+
+// do while loop 
+
+let score=11;
+do {
+    console.log(`score is ${score}`)
+    score++;
+} while (score<10); // ek bar to chlega hi fir condition check hogi 
